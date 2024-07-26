@@ -1,0 +1,65 @@
+body {
+  background-color: rgb(242, 236, 236);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.background {
+background: rgba(200, 13, 13, 0.17);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.4px);
+-webkit-backdrop-filter: blur(7.4px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.matrix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+  padding: 5px;
+  margin: 3px;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+.message {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .box {
+    width: 60px;
+    height: 60px;
+  }
+
+  .message {
+    font-size: 12px;
+    color: lawngreen;
+  }
+}
